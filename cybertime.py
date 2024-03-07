@@ -6,70 +6,17 @@ from simple_term_menu import TerminalMenu
 
 def launch():
     os.system("clear")
-    green("W")
-    time.sleep(0.1)
-    os.system("clear")
-    green("We")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Wel")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welc")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welco")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcom")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome ")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome t")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to ")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to C")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to Cy")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to Cyb")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to Cyber")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to CyberT")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to CyberTi")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to CyberTim")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to CyberTime")
-    time.sleep(0.1)
-    os.system("clear")
-    green("Welcome to CyberTime!")
+    welcome_message = "Welcomet to CyberPY!"
+    for i in range(len(welcome_message)):
+        time.sleep(0.1)
+        os.system("clear")
+        green(welcome_message[:i+1])
     main_menu()
 
 
 def main_menu():
     os.system("clear")
-    green("Welcome to CyberTime!")
+    green("Welcome to CyberPY!")
     main_menu = ["play", "settings", "credits", "exit"]
     terminal_main_menu = TerminalMenu(main_menu)
     terminal_main_menu_entry_index = terminal_main_menu.show()
@@ -132,10 +79,23 @@ def exit_menu():
 
 def start_game():
     os.system("clear")
-    yellow("year 2080")
+    message_1 = "year 2080"
+    for i in range(len(message_1)):
+        time.sleep(0.1)
+        os.system("clear")
+        yellow(message_1[:i+1])
     time.sleep(1)
-    yellow("You just immigrated to the United States of America.")
-    yellow("You are making your identity card at the mayorship.")
+    message_2 = "You just immigrated to the United States of America."
+    for i in range(len(message_2)):
+        time.sleep(0.1)
+        os.system("clear")
+        yellow(message_2[:i+1])
+    time.sleep(1)
+    message_3 = "You are now at the mayorship, making your identity card."
+    for i in range(len(message_3)):
+        time.sleep(0.1)
+        os.system("clear")
+        yellow(message_3[:i+1])
     time.sleep(3)
     os.system("clear")
     green("Hello, what is your name?")
@@ -147,7 +107,19 @@ def start_game():
     correct = input("yes or no: ")
     if correct == "yes":
         os.system("clear")
-        yellow("You are now a citizen of the United States of America.")
+        message_4 = "You are now a citizen of the United States of America."
+        for i in range(len(message_4)):
+            time.sleep(0.1)
+            os.system("clear")
+            yellow(message_4[:i+1])
+        time.sleep(1)
+        message_5 = "You're going in the city to find a job"
+        for i in range(len(message_5)):
+            time.sleep(0.1)
+            os.system("clear")
+            yellow(message_5[:i+1])
+            time.sleep(1)
+        
     if correct == "no":
         os.system("clear")
         green("Okay, let's try again.")
